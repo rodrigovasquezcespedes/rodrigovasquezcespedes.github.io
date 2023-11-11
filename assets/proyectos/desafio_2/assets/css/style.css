@@ -1,0 +1,94 @@
+body {
+  font-family: 'Roboto';
+  background-color: #c7ced8;
+  margin: 0 40px;
+}
+
+header {
+  height: 300px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-image: url("../image/img/banner.jpg");
+}
+
+header h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  font-size: 50px;
+  text-align: left;
+  position: absolute;
+  margin-top: 95px;
+  margin-left: 10px;
+
+}
+
+header span {
+  font-size: 80px;
+}
+
+header p {
+  color: #ffffff;
+  font-size: 30px;
+  position: absolute;
+  margin-top: 170px;
+  margin-left: 150px;
+}
+
+
+
+article h2 {
+  font-size: 50px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+}
+
+article img {
+  width: 420px;
+  height: auto;
+  border-radius: 40px 40px 0 0;
+  margin-left: 20px;
+  margin-bottom: 30px;
+
+}
+
+article h3 {
+  background-color: #ffffff;
+  border-radius: 0 0 30px 30px;
+  margin: -35px 830px 20px 20px;
+  padding: 10px 0px 10px 70px;
+}
+
+.count {
+  font-size: 30px;
+  margin-left: 600px;
+  margin-top: -190px;
+  position: absolute;
+}
+
+.text_price {
+  font-size: 30px;
+  margin-left: 600px;
+  margin-top: -230px;
+  position: absolute;
+}
+
+.text_amount {
+  font-size: 30px;
+  margin-left: 740px;
+  margin-top: -190px;
+  position: absolute;
+}
+
+article button {
+  font-size: 30px;
+  margin-left: 850px;
+  margin-top: -190px;
+  position: absolute;
+}
+
+footer {
+  background-color: #484846;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
