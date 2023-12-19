@@ -4,7 +4,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', 'Lucida Sans Regular';
+    font-family:'Lucida Sans Regular' , 'Roboto';
 }
 
 
@@ -57,15 +57,19 @@
     font-size: 1rem;
 }
 .nav{
-
+    grid-area: nav;
 }
+
 .checkbtn i {
     font-size: 2rem;
     position: fixed;
-    top: 1rem;
+    top: 0.5rem;
     right: 1rem;
     cursor: pointer;
-    filter: invert();
+    border-radius: 10%;
+    padding: 0.5rem;
+    background-color: #42413d;
+    color: #ffffff;
 }
 
 #check:checked~ul {
@@ -102,6 +106,12 @@
 .sobremi {
     background-color: #dcedfd;
     padding: 1rem;
+    gap:1rem;
+    font-size: 1rem;
+}
+.sobremi p{
+    margin-bottom: 1rem;
+
 }
 
 .experiencia {
