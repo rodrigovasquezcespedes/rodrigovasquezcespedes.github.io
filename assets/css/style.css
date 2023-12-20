@@ -4,8 +4,9 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family:'Lucida Sans Regular' , 'Roboto';
+    font-family: 'Lucida Sans Regular', 'Roboto';
 }
+
 .body {
     display: grid;
     grid-template-columns: 100%;
@@ -17,15 +18,18 @@
         "main"
         "footer";
 }
+
 .header {
     grid-area: header;
     background-color: #42413d;
 }
+
 .header h1 {
     padding: 1rem;
     text-align: center;
     color: #ffffff;
 }
+
 .aside {
     grid-area: aside;
     background-color: #26588B;
@@ -33,50 +37,60 @@
     flex-direction: column;
     align-items: center;
 }
+
 .aside img {
     margin: 1rem;
     width: 25rem;
     border: 0.5rem solid #ffffff;
 }
+
 .aside h2 {
     margin-top: 1rem;
     color: #ffffff;
     text-align: center;
 }
+
 .aside p {
     text-align: center;
     color: #ffffff;
     font-size: 1rem;
 }
-.nav{
+
+.nav {
     grid-area: nav;
 }
+
 .nav ul {
     position: fixed;
     width: 50%;
     height: 20rem;
-    background-color: #363232;
+    background-color: #42413d;
     top: 45px;
     left: -100%;
     transition: all .5s;
+    z-index: 1;
 }
+
 .nav ul li {
     display: block;
     text-align: center;
     line-height: 10px;
     padding: 20px;
 }
+
 .nav ul li a {
     font-size: 1.3rem;
     text-decoration: none;
     color: #ffffffff;
     transition: font-size .5s linear;
 }
-.nav ul li a:hover{
+
+.nav ul li a:hover {
     font-size: 1rem;
 }
-.checkbtn i {
-    font-size: 2rem;
+
+.checkbtn span {
+    font-size: 2.1rem;
     position: fixed;
     top: 0.5rem;
     right: 1rem;
@@ -86,49 +100,61 @@
     background-color: #42413d;
     color: #ffffff;
 }
+
 #check:checked~ul {
     left: 0;
 }
+
 #check {
     display: none;
 }
+
 .main {
     grid-area: main;
     background-color: #9c9b99;
 }
+
 .main h2 {
     text-align: center;
     padding: 0.5rem;
 }
+
 .contacto {
     background-color: #ffffff;
     padding: 1rem;
 }
-.contacto p{
-    
+
+.contacto p {
+
     font-size: 1.3rem;
 }
-.contacto i{
+
+.contacto i {
     padding: 1rem;
     font-size: 2rem;
 }
+
 .sobremi {
     background-color: #dcedfd;
     padding: 1rem;
-    gap:1rem;
+    gap: 1rem;
     font-size: 1rem;
 }
-.sobremi p{
+
+.sobremi p {
     margin-bottom: 1rem;
 }
+
 .experiencia {
     background-color: #ffffff;
-    padding: 1.5rem;  
+    padding: 1rem;
 }
-.experiencia h3{
-    margin-top: 1.5rem;  
+
+.experiencia h3 {
+    margin-top: 1.5rem;
 }
-.experiencia p{
+
+.experiencia p {
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
@@ -137,6 +163,14 @@
     background-color: #dcedfd;
     padding: 1rem;
 }
+.formacion img{
+    width: 18rem;
+    height: 12rem;
+}
+.formacion img:hover{
+    margin-left: 4rem;
+    transform: scale(1.6);
+}
 
 .herramientas {
     background-color: #ffffff;
@@ -144,11 +178,13 @@
     display: flex;
     flex-direction: column;
 }
+
 .herramientas strong {
     padding: 0.5rem;
     font-size: 1rem;
 }
-.herramientas progress{
+
+.herramientas progress {
     font-size: 1.5rem;
 }
 
@@ -156,8 +192,9 @@
     background-color: #dcedfd;
     padding: 1rem;
 }
-.competencias strong{
-    padding: 0.5rem;  
+
+.competencias strong {
+    padding: 0.5rem;
 }
 
 .footer {
@@ -167,57 +204,142 @@
     color: #ffffff;
     padding: 1rem;
 }
-.footer i{
-    padding: 1rem;
-    font-size: 2rem;
+
+.footer p {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+}
+.redes{
+    display: flex;
+    justify-content: center;
+}
+.redes p{
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-inline: 1rem;
+}
+.redes a{
+    color: #ffffff;
 }
 
 /*------------------------>   media query para pc<---------------------------------*/
 @media (min-width: 1281px) {
     .body {
-        grid-template-columns:25rem auto;
-        grid-template-rows: 3.5rem 3rem auto 8rem;
-        grid-template-areas:                    
+        grid-template-columns: 25rem auto;
+        grid-template-rows: 3.5rem auto 8rem;
+        grid-template-areas:
             "header header header"
-            "aside nav nav"
             "aside main main "
-            "footer footer footer";
+            "aside footer footer";
     }
-.header{
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
+
+    .header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 3.5rem;
+    }
+
+    .header h1 {
+        text-align: start;
+        margin-left: 3rem;
+
+    }
+
+    .contacto {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .competencias {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .experiencia {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .formacion {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    .formacion img{
+        width: 18rem;
+        height: 12rem;
+    }
+    .formacion img:hover{
+        margin-left: 8rem;
+        transform: scale(2);
+    }
+
+    .sobremi {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .herramientas {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .aside {
+        position: fixed;
+        left: 0;
+        top: 3.5rem;
+        height: 100%;
+        padding: 1rem;
+        width: 25rem;
+    }
 
     .aside img {
         margin: 2rem;
         width: 20rem;
         border: 0.5rem solid #ffffff;
     }
-   .nav{
-    left: 0;
-    position:sticky;
-    top:4rem;
-   }
-   .nav ul {
-    display: flex;
-    left: 25rem;
-    height: 2.5rem;
-    width: 100%;
-    left
-}
 
-.nav ul li {
-    display: inline-block;
-    padding: 15px;
+    .nav ul {
+        display: flex;
+        left: 25rem;
+        height: 3.5rem;
+        width: 100%;
+        top: -0.1rem;
+        padding: 0.5rem;
+    }
 
-}
+    .nav ul li {
+        display: inline-block;
+        padding: 15px;
 
-.nav ul li a {
-    text-decoration: none;
-}
-   .checkbtn{
-    display: none;
-   }
+    }
+
+    .nav ul li a {
+        text-decoration: none;
+    }
+
+    .checkbtn {
+        display: none;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer p{
+        font-size: 1.3rem;
+    }
+    .redes{
+        display: flex;
+        justify-content: center;
+    }
+    .redes p{
+        font-size: 1rem;
+        margin-top: 0.2rem;
+        margin-inline: 1rem;
+    }
+    .redes a{
+        color: #ffffff;
+    }
 
 }
